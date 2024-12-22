@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Information - Nexulen</title>
+  <link rel="stylesheet" href="payment_style.css">
+</head>
+<body>
+  <div class="payment-container">
+    <h1>Select Your Plan</h1>
+    <form action="submit_payment.php" method="POST" class="payment-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+      <!-- Payment Plan Selection -->
+      <fieldset>
+        <legend>Choose Your Plan</legend>
+
+        <div class="plan-option">
+          <input type="radio" id="silver-plan" name="plan" value="silver" required>
+          <label for="silver-plan">Silver Plan - $9</label>
+        </div>
+
+        <div class="plan-option">
+          <input type="radio" id="platinum-plan" name="plan" value="platinum" required>
+          <label for="platinum-plan">Platinum Plan - $19</label>
+        </div>
+      </fieldset>
+
+      <label for="card-number">Card Number</label>
+      <input type="text" id="card-number" name="card-number" placeholder="1234 5678 1234 5678" required>
+
+      <label for="expiration">Expiration Date</label>
+      <input type="month" id="expiration" name="expiration" required>
+
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+      <button type="submit" class="submit-btn">Submit Payment</button>
+    </form>
+  </div>
+
+  <!-- Designed by Section -->
+  <div class="credits">
+    <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Nexulean</strong> <span>All Rights Reserved</span></p>
+      </div>
+   
+
+</body>
+</html>
