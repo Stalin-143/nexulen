@@ -1,0 +1,62 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Container styling */
+  div {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Heading styling */
+  h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Common button styling */
+  .authButton {
+    background-color: #4285F4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px; /* Spacing */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  .authButton:hover {
+    background-color: #357ae8;
+  }
+  
+  /* Status message */
+  #statusMessage {
+    margin-top: 20px;
+    color: #333;
+    font-size: 16px;
+  }
+  
