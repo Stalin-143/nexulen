@@ -10,11 +10,13 @@
   <div class="payment-container">
     <h1>Select Your Plan</h1>
     <form action="submit_payment.php" method="POST" class="payment-form">
+      <!-- Full Name Input -->
       <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
+      <!-- Email Address Input -->
       <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
       <!-- Payment Plan Selection -->
       <fieldset>
@@ -22,34 +24,39 @@
 
         <div class="plan-option">
           <input type="radio" id="silver-plan" name="plan" value="silver" required>
-          <label for="silver-plan">Silver Plan - $9</label>
+          <label for="silver-plan">Silver Plan - $9/month</label>
         </div>
 
         <div class="plan-option">
           <input type="radio" id="platinum-plan" name="plan" value="platinum" required>
-          <label for="platinum-plan">Platinum Plan - $19</label>
+          <label for="platinum-plan">Platinum Plan - $19/month</label>
         </div>
       </fieldset>
 
+      <!-- Card Number Input -->
       <label for="card-number">Card Number</label>
-      <input type="text" id="card-number" name="card-number" placeholder="1234 5678 1234 5678" required>
+      <input type="text" id="card-number" name="card-number" placeholder="1234 5678 1234 5678" maxlength="19" required>
 
+      <!-- Expiration Date Input -->
       <label for="expiration">Expiration Date</label>
       <input type="month" id="expiration" name="expiration" required>
 
+      <!-- CVV Input -->
       <label for="cvv">CVV</label>
-      <input type="text" id="cvv" name="cvv" placeholder="123" required>
+      <input type="password" id="cvv" name="cvv" placeholder="123" maxlength="4" required>
 
+      <!-- Submit Button -->
       <button type="submit" class="submit-btn">Submit Payment</button>
     </form>
   </div>
 
   <!-- Designed by Section -->
-  <div class="credits">
-    <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Nexulean</strong> <span>All Rights Reserved</span></p>
-      </div>
-   
-
+  <footer class="credits">
+    <div class="copyright text-center">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Nexulen</strong> <span>All Rights Reserved</span></p>
+      <p>Designed with ❤️ by Nexulen Team</p>
+    </div>
+  </footer>
 </body>
 </html>
+
