@@ -77,6 +77,112 @@
       <a class="btn-getstarted" href="index.html#about">Get Started</a>
       
     </div>
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google Material Icons -->
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Profile card container */
+    .profile-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #3498db; /* Professional blue */
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 50px; /* Small size */
+      height: 50px; /* Small size */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+    }
+
+    /* Hover effect */
+    .profile-container:hover {
+      transform: scale(1.1); /* Slightly enlarge the card */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    }
+
+    /* Profile image using Material Icon (Human silhouette) */
+    .profile-container i {
+      font-size: 30px; /* Icon size */
+      color: #fff; /* Icon color */
+    }
+
+    /* Profile details container */
+    .profile-details {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #2c3e50; /* Darker professional background */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px); /* Starting position below the profile card */
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s; /* Smooth transition */
+    }
+
+    /* Show profile details on hover */
+    .profile-container:hover .profile-details {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0); /* Slide up effect */
+      transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    }
+
+    /* Profile details text styling */
+    .profile-details h4 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ecf0f1; /* Light color for readability */
+    }
+
+    .profile-details p {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #bdc3c7; /* Lighter text color */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Profile card wrapped in a link for redirection -->
+  <a href="/homepage profiledetails/inde.html" target="_blank">
+    <div class="profile-container">
+      <i class="material-icons">account_circle</i> <!-- Material icon for a user -->
+      <!-- Hidden profile details, visible on hover -->
+      <div class="profile-details">
+        <h4>User Name</h4>
+        <p>Client</p>
+      </div>
+    </div>
+  </a>
+
+</body>
+</html>
+
   </header>
 
   <main class="main">
@@ -278,7 +384,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <i class="bi bi-activity"></i>
-              <h4><a href="" class="stretched-link">Risk Assessment </a></h4>
+              <h4><a href="services.html" class="stretched-link">Risk Assessment </a></h4>
               <p>    Identifying vulnerabilities and providing strategies to reduce risks to your digital infrastructure.
 
               </p>
@@ -288,7 +394,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <i class="bi bi-bounding-box-circles"></i>
-              <h4><a href="" class="stretched-link">Threat Monitoring</a></h4>
+              <h4><a href="services.html" class="stretched-link">Threat Monitoring</a></h4>
               <p>Continuously monitoring systems to detect and respond to potential security risks.</p>
             </div>
           </div><!-- End Service Item -->
@@ -296,7 +402,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <i class="bi bi-calendar4-week"></i>
-              <h4><a href="" class="stretched-link">Incident Response</a></h4>
+              <h4><a href="services.html" class="stretched-link">Incident Response</a></h4>
               <p>Rapidly addressing and mitigating the impact of security breaches and cyberattacks.</p>
             </div>
           </div><!-- End Service Item -->
@@ -304,7 +410,7 @@
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <i class="bi bi-broadcast"></i>
-              <h4><a href="" class="stretched-link">Network Security</a></h4>
+              <h4><a href="services.html" class="stretched-link">Network Security</a></h4>
               <p>Protecting your networks from cyber threats and unauthorized access.</p>
             </div>
           </div><!-- End Service Item -->
@@ -648,7 +754,7 @@
               <div class="member-img">
                 <img src="assets/img/team/team.webp" class="img-fluid" alt="">
                 <div class="social">
-                  <a href="https://x.com/S_t_a_l_i__?t=WUs-_kPygUlFU4raisBhYA&s=09"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://github.com/Stalin-143" class="github-button" target="_blank"><i class = "bi bi-github"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href="https://www.instagram.com/stali.n_"><i class="bi bi-instagram"></i></a>
                   <a href="https://www.linkedin.com/in/stalin-s-a310882a0/"><i class="bi bi-linkedin"></i></a>
@@ -656,7 +762,7 @@
               </div>
               <div class="member-info">
                 <h4>Stalin</h4>
-                <span>Chief Executive Officer</span>
+                <span>Founder & CEO</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -666,15 +772,16 @@
               <div class="member-img">
                 <img src="assets/img/team/team.webp" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://github.com/RohitSurya2809" class="github-button" target="_blank"><i class = "bi bi-github"></i></a>
+                
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Rohit Surya A T</h4>
+                <span>Chief Executive Officer</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -684,15 +791,16 @@
               <div class="member-img">
                 <img src="assets/img/team/team.webp" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://github.com/reginaldalfret" class="github-button" target="_blank"><i class = "bi bi-github"></i></a>
+                
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Security engineer</span>
+                <h4>Reginald Alfret</h4>
+                <span>Chief Executive Officer</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -709,8 +817,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
+                <h4>Stana</h4>
+                <span>Security Officer</span>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -978,6 +1086,261 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexulean Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #007bff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        #chatbot-icon:hover {
+            transform: scale(1.1);
+        }
+        #chatbot-icon img {
+            width: 30px;
+            height: 30px;
+        }
+        #chat-window {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        #chat-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #close-chat {
+            cursor: pointer;
+            font-size: 20px;
+        }
+        #chat-messages {
+            flex-grow: 1;
+            padding: 10px;
+            overflow-y: auto;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 20px;
+            max-width: 80%;
+        }
+        .user-message {
+            background-color: #e6f2ff;
+            align-self: flex-end;
+            margin-left: auto;
+        }
+        .bot-message {
+            background-color: #f0f0f0;
+            align-self: flex-start;
+        }
+        #chat-input {
+            display: flex;
+            padding: 10px;
+            border-top: 1px solid #e0e0e0;
+        }
+        #user-input {
+            flex-grow: 1;
+            border: none;
+            padding: 8px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        #send-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbot-icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="AI Icon">
+    </div>
+    <div id="chat-window">
+        <div id="chat-header">
+            <span>Nexulean Chatbot</span>
+            <span id="close-chat">&times;</span>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const chatbotIcon = document.getElementById('chatbot-icon');
+        const chatWindow = document.getElementById('chat-window');
+        const closeChat = document.getElementById('close-chat');
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+
+        chatbotIcon.addEventListener('click', toggleChat);
+        closeChat.addEventListener('click', toggleChat);
+        sendButton.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        function toggleChat() {
+            chatWindow.style.display = chatWindow.style.display === 'none' ? 'flex' : 'none';
+        }
+
+        function sendMessage() {
+            const message = userInput.value.trim();
+            if (message) {
+                addMessage('user', message);
+                userInput.value = '';
+                setTimeout(() => {
+                    const response = generateResponse(message);
+                    addMessage('bot', response);
+                }, 500);
+            }
+        }
+
+        function addMessage(sender, message) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', `${sender}-message`);
+            messageElement.textContent = message;
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function generateResponse(message) {
+            const lowerMessage = message.toLowerCase();
+            if (lowerMessage.includes('email') || lowerMessage.includes('contact')) {
+                return "You can contact Nexulean at nexulean@gmail.com.";
+            } else if (lowerMessage.includes('phone') || lowerMessage.includes('call')) {
+                return "You can reach Nexulean at 9655293238.";
+            } else if (lowerMessage.includes('Police') || lowerMessage.includes('call')) {
+                return "100";
+            } else if (lowerMessage.includes('whats your name ') || lowerMessage.includes('call')) {
+                return "I am nexulean";
+            } else if (lowerMessage.includes('mission') || lowerMessage.includes('purpose')) {
+                return "Nexulean's mission is combating cyber threats and protecting digital assets.";
+            } else if (lowerMessage.includes('hi') || lowerMessage.includes('hello')) {
+                return "Hi! Welcome to Nexulean. How can I assist you today? We’re here to help you with cybersecurity solutions, customer support, and more.";
+            } else if (lowerMessage.includes('help') || lowerMessage.includes('support')) {
+                return `I'm here to help! Nexulean provides 24/7 customer support to assist you with:
+    - Cybersecurity concerns
+    - Technical issues
+    - General inquiries
+    Let me know how I can assist further.`;
+            } else if (lowerMessage.includes('features') || lowerMessage.includes('services')) {
+                return `Nexulean offers the following key features:
+    - Advanced threat detection and prevention systems.
+    - Vulnerability assessments and penetration testing.
+    - Data encryption and secure cloud solutions.
+    - 24/7 monitoring and incident response services.
+    - Cybersecurity training and awareness programs.vcvvv
+    - Secure software and application development consulting.
+    Let us know if you'd like to learn more about any of these services!`;
+            } else if (lowerMessage.includes('values') || lowerMessage.includes('principles')) {
+                return `Nexulean operates on the following core values:
+    - Integrity: Ensuring honesty and transparency in all operations.
+    - Innovation: Leveraging the latest technologies to protect digital assets.
+    - Customer Focus: Prioritizing client needs and delivering tailored solutions.
+    - Trust: Building secure environments where clients feel safe online.
+    - Excellence: Striving for the highest standards in every solution we deliver.
+    Let us know how we can uphold these values for you.`;
+            } else if (lowerMessage.includes('feedback') || lowerMessage.includes('suggestion')) {
+                return `We value your feedback! Please share your thoughts and suggestions by filling out our feedback form here: https://docs.google.com/forms/d/e/1FAIpQLSfxq-47_gByjjpr5MGTQDNNR03hht-71s7VHUM9oPBEWwfQtg/viewform?usp=sharing. Your input helps us improve!`;
+            } else if (lowerMessage.includes('live chat') || lowerMessage.includes('customer service')) {
+                return `Nexulean provides live customer support to address your cybersecurity concerns in real-time. Please let us know your query, and we'll ensure a quick response.`;
+            } else if (lowerMessage.includes('about') || lowerMessage.includes('company')) {
+                return `Nexulean is a cybersecurity-focused company dedicated to protecting individuals, businesses, and governments from cyber threats. Our services include:
+    - Threat detection and response.
+    - Secure software consulting.
+    - Cyber awareness training.
+    - Data breach recovery and prevention.
+    Feel free to reach out to learn more about us!`;
+            } else if (lowerMessage.includes('location') || lowerMessage.includes('office')) {
+                return `Nexulean operates globally to provide cybersecurity services. If you'd like to know about our specific office locations, please contact us at nexulean@gmail.com.`;
+            } else if (lowerMessage.includes('cybersecurity') || lowerMessage.includes('threats')) {
+                return `Cybersecurity is at the core of what Nexulean does. We specialize in:
+    - Real-time threat detection.
+    - Mitigation of cyberattacks like ransomware, phishing, and DDoS.
+    - Building robust firewalls and security systems.
+    - Providing advice on secure system architecture.
+    If you need specific cybersecurity advice, let us know!`;
+            } else if (lowerMessage.includes('training') || lowerMessage.includes('education')) {
+                return `Nexulean offers training programs in:
+    - Cybersecurity awareness and best practices.
+    - Ethical hacking and penetration testing.
+    - Risk management and incident response.
+    - Secure coding for developers.
+    Contact us for course details at nexulean@gmail.com.`;
+            } else if (lowerMessage.includes('career') || lowerMessage.includes('jobs')) {
+                return `Nexulean is always looking for talented professionals in cybersecurity. Current openings include roles in:
+    - Threat intelligence analysis
+    - Ethical hacking
+    - Software security development
+    If you're interested in joining our team, please email your resume to nexulean@gmail.com.`;
+            } else if (lowerMessage.includes('products') || lowerMessage.includes('solutions')) {
+                return `Nexulean offers innovative cybersecurity products, such as:
+    - AI-powered breach detection systems.
+    - Nextor IP Changer for secure browsing.
+    - Secure cloud storage platforms.
+    Let us know if you'd like more information about these solutions!`;
+            } else if (lowerMessage.includes('partners') || lowerMessage.includes('collaboration')) {
+                return `Nexulean collaborates with leading tech firms and organizations to enhance global cybersecurity. For partnership inquiries, please email us at nexulean@gmail.com.`;
+            } else if (lowerMessage.includes('events') || lowerMessage.includes('webinars')) {
+                return `Nexulean regularly hosts webinars and events on:
+    - Latest cybersecurity trends.
+    - Hands-on ethical hacking tutorials.
+    - Awareness programs for businesses and individuals.
+    Stay updated by subscribing to our newsletter or emailing us at nexulean@gmail.com.`;
+            } else if (lowerMessage.includes('newsletter') || lowerMessage.includes('updates')) {
+                return `Stay informed about the latest in cybersecurity by subscribing to Nexulean's newsletter. Email us at nexulean@gmail.com to subscribe and receive updates on threats, solutions, and events.`;
+            } else {
+                return "I'm sorry, I don't have information about that. Please contact nexulean@gmail.com for assistance, or let me know if you'd like me to guide you further!";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
 
 </body>
 
