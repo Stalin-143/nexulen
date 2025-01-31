@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forbidden</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+
+    .forbidden-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 400px;
+      max-width: 90%;
+    }
+
+    .forbidden-container h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #e74c3c; /* Red color for error */
+    }
+
+    .forbidden-container p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .contact-button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="forbidden-container">
+    <h1>403 Forbidden</h1>
+    <p>You are not able to access this page.</p>
+    <button class="contact-button" onclick="contactSupport()">Contact Nexulean Customer Support</button>
+  </div>
+
+  <script>
+    // Function to handle contact support button click
+    function contactSupport() {
+      alert("Redirecting to Nexulean customer support...");
+      window.location.href = "mailto:nexulean@gmail.com";  // Opens the default email client
+    }
+
+    // Disable right-click and text selection
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();  // Disable right-click
+    });
+    document.addEventListener('selectstart', function(e) {
+      e.preventDefault();  // Disable text selection
+    });
+  </script>
+</body>
+</html>
