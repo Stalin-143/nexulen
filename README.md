@@ -108,7 +108,7 @@ This project is licensed under the [License](LICENSE).
 
 For inquiries or feedback, please reach out to us:
 
-- **Website**: [nexulen](https://nexulen.github.io/nexulen/)
+- **Website**: [nexulen](https://nexulean.netlify.app/)
 
 ---
 
